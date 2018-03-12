@@ -1,5 +1,4 @@
 # Teste Vizir
----
 
 ## Como executar
 
