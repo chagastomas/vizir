@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Vizir</title>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/script.js"></script>
+
+<body>
+    <div class="canvas">
+        <div class="menu">
+            <h1>Telzir</h1>
+        </div>
+        <div class="divs">
+            <h3>
+                DDD<br>origem
+            </h3>
+            <input id="orig" class="ddd" maxlength="3" type="text" onkeypress="return condicao(event)"/>
+        </div>
+        <div class="divs">
+            <h3>
+                DDD<br>destino
+            </h3>
+            <input id="dest" class="ddd" maxlength="3" type="text" onkeypress="return condicao(event)"/>
+        </div>
+        <div class="divs">
+            <h3 style="padding: 17px 0 0 0">
+                Planos
+            </h3>
+            <select id="select" class="planos">
+              <option value="FaleMais 30" selected="selected">FaleMais 30</option>
+              <option value="FaleMais 60" selected="selected">FaleMais 60</option>
+              <option value="FaleMais 120" selected="selected">FaleMais 120</option>
+              <option value="Sem plano" selected="selected">Sem plano</option>
+            </select>
+        </div>
+        <div class="divs">
+            <h3 style="padding: 17px 0 0 0">
+                Minutos
+            </h3>
+            <input id="min" style="width: 40px" class="ddd" maxlength="3" type="text" onkeypress="return condicao(event)"/>
+        </div>
+        <div class="divs">
+            <input id="calc" class="bt" type="button" value="Calcular" onclick="precos(this)"/>
+        </div>
+        <div class="divs">
+            <h3>
+                Total
+            </h3>
+            <input id="total" style="width: 50px" type="text" disabled/>
+        </div>
+    </div>
+</body>
+
+</html>
